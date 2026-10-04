@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="220" viewBox="0 0 880 220" fill="none">
+<style>
+* { transform-box: fill-box; transform-origin: center; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+.n { animation: n 3s ease-in-out infinite; }
+.n0 { animation-delay: 0.0s; }
+.n1 { animation-delay: 0.3s; }
+.n2 { animation-delay: 0.6s; }
+.n3 { animation-delay: 0.9s; }
+.n4 { animation-delay: 1.2s; }
+@keyframes n { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+</style>
+<rect width="880" height="220" rx="22" fill="#FAFAF9"/>
+<path d="M170 110 L360 56" stroke="#E4E1E7" stroke-width="2.5"/><circle r="4.5" fill="#D99A6C"><animateMotion dur="1.8s" begin="0.00s" repeatCount="indefinite" path="M170 110 L360 56"/></circle><path d="M170 110 L360 164" stroke="#E4E1E7" stroke-width="2.5"/><circle r="4.5" fill="#D99A6C"><animateMotion dur="1.8s" begin="0.35s" repeatCount="indefinite" path="M170 110 L360 164"/></circle><path d="M360 56 L560 110" stroke="#E4E1E7" stroke-width="2.5"/><circle r="4.5" fill="#D99A6C"><animateMotion dur="1.8s" begin="0.70s" repeatCount="indefinite" path="M360 56 L560 110"/></circle><path d="M360 164 L560 110" stroke="#E4E1E7" stroke-width="2.5"/><circle r="4.5" fill="#D99A6C"><animateMotion dur="1.8s" begin="1.05s" repeatCount="indefinite" path="M360 164 L560 110"/></circle><path d="M560 110 L730 110" stroke="#E4E1E7" stroke-width="2.5"/><circle r="4.5" fill="#D99A6C"><animateMotion dur="1.8s" begin="1.40s" repeatCount="indefinite" path="M560 110 L730 110"/></circle><g class="n n0"><rect x="124" y="80" width="92" height="60" rx="14" fill="#1B1C1E"/><rect x="140" y="114" width="60" height="8" rx="4" fill="#7A688A"/><circle cx="144" cy="98" r="4" fill="#D99A6C"/></g><g class="n n1"><rect x="314" y="26" width="92" height="60" rx="14" fill="#F2F0F4"/><rect x="330" y="60" width="60" height="8" rx="4" fill="#D8D0DE"/><circle cx="334" cy="44" r="4" fill="#7A688A"/></g><g class="n n2"><rect x="314" y="134" width="92" height="60" rx="14" fill="#F2F0F4"/><rect x="330" y="168" width="60" height="8" rx="4" fill="#D8D0DE"/><circle cx="334" cy="152" r="4" fill="#7A688A"/></g><g class="n n3"><rect x="514" y="80" width="92" height="60" rx="14" fill="#F2F0F4"/><rect x="530" y="114" width="60" height="8" rx="4" fill="#D8D0DE"/><circle cx="534" cy="98" r="4" fill="#7A688A"/></g><g class="n n4"><rect x="684" y="80" width="92" height="60" rx="14" fill="#F2F0F4"/><rect x="700" y="114" width="60" height="8" rx="4" fill="#D8D0DE"/><circle cx="704" cy="98" r="4" fill="#7A688A"/></g>
+</svg>
