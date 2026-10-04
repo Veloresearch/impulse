@@ -146,6 +146,24 @@ The method itself we keep to ourselves.
 
 <br>
 
+## See it
+
+<table>
+<tr>
+<td width="50%"><img src=".github/screens/apps.png" alt="Apps - opencode connected"><br><sub><b>Apps</b> - opencode connected in one press, memory per project</sub></td>
+<td width="50%"><img src=".github/screens/home.png" alt="Home"><br><sub><b>Home</b> - what is loaded and what the machine is doing</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src=".github/screens/hardware.png" alt="Hardware"><br><sub><b>Hardware</b> - graphics, memory and processor, live</sub></td>
+<td width="50%"><img src=".github/screens/contexts.png" alt="Contexts"><br><sub><b>Contexts</b> - memories you can read and share</sub></td>
+</tr>
+<tr>
+<td colspan="2"><img src=".github/screens/settings.png" alt="Settings - themes and fourteen orbs"><br><sub><b>Settings</b> - five themes, nine accents and the orb in fourteen styles</sub></td>
+</tr>
+</table>
+
+<br>
+
 ## Everything in it
 
 <div align="center"><img src=".github/fit.svg" alt="" width="100%"></div>
@@ -199,6 +217,14 @@ From another machine on your network the same address works with the key from th
 ## Measured, not claimed
 
 One laptop: **RTX 3060 Laptop, 6 GB**, **Qwen3.5-4B-Q4_K_M**, an **8 192-token window**.
+
+<div align="center">
+<img src=".github/chart-ruler.svg" alt="RULER averages by context length" width="100%"><br><br>
+<img src=".github/chart-ladder.svg" alt="Nine-task averages from 1M to 32M tokens" width="100%"><br><br>
+<img src=".github/chart-latency.svg" alt="Median answer time from 1M to 32M tokens" width="100%">
+</div>
+
+<br>
 
 **NVIDIA's RULER**, on their harness, nothing underneath it modified:
 
