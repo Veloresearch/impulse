@@ -91,7 +91,7 @@ Most local runners load a model and give you its window. VLS does that too, and 
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset=".github/screens/home-light.png">
-  <img src=".github/screens/home.png" alt="VLS Home: the loaded model, its writing speed and graphics memory, quick prompts and recent chats" width="100%">
+  <img src=".github/screens/home-p3.png" alt="VLS Home: the loaded model, its writing speed and graphics memory, quick prompts and recent chats" width="100%">
 </picture>
 
 <p align="right"><sub><a href="#top">Back to top</a></sub></p>
@@ -154,7 +154,7 @@ simply the conversation as it happens - and every question after that can reach 
 | 20M tokens | 10.6 s | 708 ms | 1 117 ms |
 | **32M tokens** | **17.2 s** | **653 ms** | **1 111 ms** |
 
-<p align="center"><img src=".github/screens/contexts.png" alt="Contexts: four memories with their size in tokens, how full each is, and which apps use them" width="100%"></p>
+<p align="center"><img src=".github/screens/contexts-p3.png" alt="Contexts: four memories with their size in tokens, how full each is, and which apps use them" width="100%"></p>
 
 How it was measured, what the controls were and where the results stop are in the
 **[technical report](https://veloresearch.com/research/velocity-context)**
@@ -336,7 +336,7 @@ How the last answer was written, one token at a time: what the model chose, how 
 </tr>
 <tr>
 <td width="50%"><img src=".github/screens/plugins.png" alt="Plugins: Filesystem and GitHub running, SQLite switched off, and one-click presets"><br><sub><b>Plugins</b> - MCP servers, started and watched by VLS</sub></td>
-<td width="50%"><img src=".github/screens/apps.png" alt="Apps: opencode connected with memory per project, Hermes Agent ready to connect"><br><sub><b>Apps</b> - connect an agent in one press</sub></td>
+<td width="50%"><img src=".github/screens/apps-p3.png" alt="Apps: opencode connected with memory per project, Hermes Agent ready to connect"><br><sub><b>Apps</b> - connect an agent in one press</sub></td>
 </tr>
 </table>
 
