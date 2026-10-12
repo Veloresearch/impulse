@@ -1,0 +1,42 @@
+name: Suggest a feature
+description: Something you'd like VLS to do, or to do better.
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We're planning the next preview, and ideas from people who actually run local models shape it. Small ideas are welcome too.
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like VLS to do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: What would you use it for?
+      description: The situation behind the idea helps us build the right thing.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of VLS?
+      multiple: true
+      options:
+        - Chat
+        - Contexts (Velocity Context)
+        - Models and hardware
+        - Computer use
+        - The island
+        - Voice
+        - Studio
+        - Plugins (MCP)
+        - API / connecting other apps
+        - Linux
+        - Something new

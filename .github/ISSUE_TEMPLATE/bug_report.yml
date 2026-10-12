@@ -1,0 +1,91 @@
+name: Report a bug
+description: Something in VLS doesn't work the way it should.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. VLS is a preview, so bug reports are the most useful thing you can give us.
+        A screenshot or a short description of what you clicked helps more than a long explanation.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, and what went wrong?
+      placeholder: I loaded Qwen3.5-4B, added a folder to Contexts, asked a question and...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: VLS version
+      description: Shown at the top of the sidebar, e.g. "0.1.1 Preview 3".
+      placeholder: 0.1.1 Preview 3
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows 11
+        - Windows 10
+        - Linux
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: gpu
+    attributes:
+      label: Graphics card and memory
+      description: Or "CPU only".
+      placeholder: RTX 3060 Laptop, 6 GB
+    validations:
+      required: false
+
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      placeholder: Qwen3.5-4B-Q4_K_M.gguf
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where in VLS?
+      multiple: true
+      options:
+        - Installing or updating
+        - Chat
+        - Contexts (Velocity Context)
+        - Models and downloads
+        - Computer use
+        - The island
+        - Voice
+        - Studio
+        - Plugins (MCP)
+        - API / connecting other apps
+        - Settings
+        - Something else
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, logs or anything else
+      description: Drag images in here. On Windows the log is %LOCALAPPDATA%\Velocity\VLS\vls.log. Please remove anything private first.
+    validations:
+      required: false

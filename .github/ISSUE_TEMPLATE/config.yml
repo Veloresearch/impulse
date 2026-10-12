@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Technical report
+    url: https://veloresearch.com/research/velocity-context
+    about: How Velocity Context was measured, with the per-task tables.
+  - name: Business and licensing
+    url: https://veloresearch.com
+    about: Using VLS in a company, or anything that isn't a bug or an idea.
