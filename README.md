@@ -13,18 +13,18 @@ on a 6 GB laptop card. Nothing left the machine.
 
 <br>
 
-<a href="https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases/latest/download/VLSSetup.exe"><img src="https://img.shields.io/badge/Download_for_Windows-VLSSetup.exe-7A688A?style=for-the-badge&logo=windows&logoColor=white&labelColor=1F1F22" alt="Download for Windows"></a>
+<a href="https://github.com/Veloresearch/velocity-local-services/releases/latest/download/VLSSetup.exe"><img src="https://img.shields.io/badge/Download_for_Windows-VLSSetup.exe-7A688A?style=for-the-badge&logo=windows&logoColor=white&labelColor=1F1F22" alt="Download for Windows"></a>
 &nbsp;
-<a href="https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases/latest/download/VLS-linux-x64.tar.gz"><img src="https://img.shields.io/badge/Download_for_Linux-x64_tar.gz-7A688A?style=for-the-badge&logo=linux&logoColor=white&labelColor=1F1F22" alt="Download for Linux"></a>
+<a href="https://github.com/Veloresearch/velocity-local-services/releases/latest/download/VLS-linux-x64.tar.gz"><img src="https://img.shields.io/badge/Download_for_Linux-x64_tar.gz-7A688A?style=for-the-badge&logo=linux&logoColor=white&labelColor=1F1F22" alt="Download for Linux"></a>
 
 <br>
 
-[![Release](https://img.shields.io/github/v/release/Veloresearch/VLS-32M-Context-Local-LLM?label=release&color=7A688A&labelColor=1F1F22&style=flat-square)](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases/latest)
-[![Release date](https://img.shields.io/github/release-date/Veloresearch/VLS-32M-Context-Local-LLM?label=released&color=7A688A&labelColor=1F1F22&style=flat-square)](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Veloresearch/VLS-32M-Context-Local-LLM/total?label=downloads&color=D99A6C&labelColor=1F1F22&style=flat-square)](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases)
-[![Latest release downloads](https://img.shields.io/github/downloads/Veloresearch/VLS-32M-Context-Local-LLM/latest/total?label=latest%20release&color=D99A6C&labelColor=1F1F22&style=flat-square)](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases/latest)
-[![Stars](https://img.shields.io/github/stars/Veloresearch/VLS-32M-Context-Local-LLM?color=D8D0DE&labelColor=1F1F22&logo=github&logoColor=white&style=flat-square)](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/stargazers)
-[![Last commit](https://img.shields.io/github/last-commit/Veloresearch/VLS-32M-Context-Local-LLM?color=D8D0DE&labelColor=1F1F22&style=flat-square)](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/commits)
+[![Release](https://img.shields.io/github/v/release/Veloresearch/velocity-local-services?label=release&color=7A688A&labelColor=1F1F22&style=flat-square)](https://github.com/Veloresearch/velocity-local-services/releases/latest)
+[![Release date](https://img.shields.io/github/release-date/Veloresearch/velocity-local-services?label=released&color=7A688A&labelColor=1F1F22&style=flat-square)](https://github.com/Veloresearch/velocity-local-services/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Veloresearch/velocity-local-services/total?label=downloads&color=D99A6C&labelColor=1F1F22&style=flat-square)](https://github.com/Veloresearch/velocity-local-services/releases)
+[![Latest release downloads](https://img.shields.io/github/downloads/Veloresearch/velocity-local-services/latest/total?label=latest%20release&color=D99A6C&labelColor=1F1F22&style=flat-square)](https://github.com/Veloresearch/velocity-local-services/releases/latest)
+[![Stars](https://img.shields.io/github/stars/Veloresearch/velocity-local-services?color=D8D0DE&labelColor=1F1F22&logo=github&logoColor=white&style=flat-square)](https://github.com/Veloresearch/velocity-local-services/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/Veloresearch/velocity-local-services?color=D8D0DE&labelColor=1F1F22&style=flat-square)](https://github.com/Veloresearch/velocity-local-services/commits)
 <br>
 [![Windows](https://img.shields.io/badge/Windows-x64_·_CUDA_·_Vulkan-1F1F22?logo=windows&logoColor=white&style=flat-square)](#install)
 [![Linux](https://img.shields.io/badge/Linux-x64_·_Vulkan-1F1F22?logo=linux&logoColor=white&style=flat-square)](#install)
@@ -47,7 +47,7 @@ on a 6 GB laptop card. Nothing left the machine.
 
 <br><br>
 
-**[Install](#install)** &nbsp;·&nbsp; **[Velocity Context](#velocity-context)** &nbsp;·&nbsp; **[Benchmarks](#measured-not-claimed)** &nbsp;·&nbsp; **[Technical report](https://veloresearch.com/research/velocity-context)** &nbsp;·&nbsp; **[Release notes](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases/latest)** &nbsp;·&nbsp; **[veloresearch.com](https://veloresearch.com)**
+**[Install](#install)** &nbsp;·&nbsp; **[Velocity Context](#velocity-context)** &nbsp;·&nbsp; **[Benchmarks](#measured-not-claimed)** &nbsp;·&nbsp; **[Technical report](https://veloresearch.com/research/velocity-context)** &nbsp;·&nbsp; **[Release notes](https://github.com/Veloresearch/velocity-local-services/releases/latest)** &nbsp;·&nbsp; **[veloresearch.com](https://veloresearch.com)**
 
 </div>
 
@@ -65,7 +65,7 @@ on a 6 GB laptop card. Nothing left the machine.
 - **Voice & audio settings.** Choose and test your microphone and speaker; input volume, noise suppression and echo cancellation.
 - **Starting VLS.** Opening it always shows its window; starting with Windows stays in the background.
 
-Computer use and the island are Windows only for now. Full notes: **[VLS 0.1.1 Preview 3](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases/tag/v0.1.1-preview.3)** · [all releases](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases)
+Computer use and the island are Windows only for now. Full notes: **[VLS 0.1.1 Preview 3](https://github.com/Veloresearch/velocity-local-services/releases/tag/v0.1.1-preview.3)** · [all releases](https://github.com/Veloresearch/velocity-local-services/releases)
 
 </details>
 
@@ -101,16 +101,16 @@ Most local runners load a model and give you its window. VLS does that too, and 
 
 One command. No account, no sign-in, no telemetry, no Docker.
 
-**Windows** - [download VLSSetup.exe](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases/latest/download/VLSSetup.exe), or:
+**Windows** - [download VLSSetup.exe](https://github.com/Veloresearch/velocity-local-services/releases/latest/download/VLSSetup.exe), or:
 
 ```powershell
-irm https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases/latest/download/install.ps1 | iex
+irm https://github.com/Veloresearch/velocity-local-services/releases/latest/download/install.ps1 | iex
 ```
 
-**Linux** - [download the x64 build](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases/latest/download/VLS-linux-x64.tar.gz) (a [Vulkan build](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases/latest/download/VLS-linux-x64-vulkan.tar.gz) is beside it), or:
+**Linux** - [download the x64 build](https://github.com/Veloresearch/velocity-local-services/releases/latest/download/VLS-linux-x64.tar.gz) (a [Vulkan build](https://github.com/Veloresearch/velocity-local-services/releases/latest/download/VLS-linux-x64-vulkan.tar.gz) is beside it), or:
 
 ```bash
-curl -fsSL https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases/latest/download/install.sh | sh
+curl -fsSL https://github.com/Veloresearch/velocity-local-services/releases/latest/download/install.sh | sh
 ```
 
 The installer looks at the machine before it downloads anything and takes the build that suits it -
@@ -123,7 +123,7 @@ Settings. Removing it is deleting one folder; your models and memories live some
 | **Graphics card** | Optional. A 6 GB card runs a 4B model with every layer on the card; the processor build works everywhere. |
 | **Windows installer** | The preview is not code-signed yet. If SmartScreen stops it, choose *More info → Run anyway*. |
 | **Linux** | Builds are packaged and tested less than Windows. Computer use and the island are Windows only for now. |
-| **Every build** | On the [releases page](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases), with the [notes for the latest](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases/latest). |
+| **Every build** | On the [releases page](https://github.com/Veloresearch/velocity-local-services/releases), with the [notes for the latest](https://github.com/Veloresearch/velocity-local-services/releases/latest). |
 
 <p align="center"><img src=".github/gifs/boot.gif" alt="The Velocity mark assembling as VLS starts" width="60%"></p>
 
@@ -480,7 +480,7 @@ Hugging Face, searching the web from Chat, downloading what you chose, and check
 **contact@veloresearch.com**. See [LICENSE](LICENSE).
 
 **Is it finished?** It is a preview. When you find a rough edge,
-**[open an issue](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/issues)** - it is the fastest
+**[open an issue](https://github.com/Veloresearch/velocity-local-services/issues)** - it is the fastest
 way to get it fixed.
 
 <p align="right"><sub><a href="#top">Back to top</a></sub></p>
@@ -493,15 +493,15 @@ way to get it fixed.
 
 ### If VLS is useful to you, a star is the whole ask
 
-[![Star this repository](https://img.shields.io/github/stars/Veloresearch/VLS-32M-Context-Local-LLM?style=for-the-badge&color=D99A6C&labelColor=1F1F22&logo=github&logoColor=white&label=star%20this%20repository)](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM)
+[![Star this repository](https://img.shields.io/github/stars/Veloresearch/velocity-local-services?style=for-the-badge&color=D99A6C&labelColor=1F1F22&logo=github&logoColor=white&label=star%20this%20repository)](https://github.com/Veloresearch/velocity-local-services)
 
 <br>
 
-<a href="https://star-history.com/#Veloresearch/VLS-32M-Context-Local-LLM&Date">
+<a href="https://star-history.com/#Veloresearch/velocity-local-services&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Veloresearch/VLS-32M-Context-Local-LLM&type=Date&theme=dark">
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Veloresearch/VLS-32M-Context-Local-LLM&type=Date">
-    <img alt="Star history of VLS" src="https://api.star-history.com/svg?repos=Veloresearch/VLS-32M-Context-Local-LLM&type=Date" width="72%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Veloresearch/velocity-local-services&type=Date&theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Veloresearch/velocity-local-services&type=Date">
+    <img alt="Star history of VLS" src="https://api.star-history.com/svg?repos=Veloresearch/velocity-local-services&type=Date" width="72%">
   </picture>
 </a>
 
@@ -511,6 +511,6 @@ way to get it fixed.
 
 **Made by [Velocity](https://veloresearch.com)** · local runtimes and long-context execution
 
-[veloresearch.com](https://veloresearch.com) &nbsp;·&nbsp; [Technical report](https://veloresearch.com/research/velocity-context) &nbsp;·&nbsp; [Releases](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/releases) &nbsp;·&nbsp; [Issues](https://github.com/Veloresearch/VLS-32M-Context-Local-LLM/issues) &nbsp;·&nbsp; [@velo_research](https://x.com/velo_research) &nbsp;·&nbsp; [contact@veloresearch.com](mailto:contact@veloresearch.com)
+[veloresearch.com](https://veloresearch.com) &nbsp;·&nbsp; [Technical report](https://veloresearch.com/research/velocity-context) &nbsp;·&nbsp; [Releases](https://github.com/Veloresearch/velocity-local-services/releases) &nbsp;·&nbsp; [Issues](https://github.com/Veloresearch/velocity-local-services/issues) &nbsp;·&nbsp; [@velo_research](https://x.com/velo_research) &nbsp;·&nbsp; [contact@veloresearch.com](mailto:contact@veloresearch.com)
 
 </div>
