@@ -6,10 +6,11 @@
 
 # Velocity Local Services
 
-### A local model server whose memory is far larger than its window.
+### Run LLMs on your own computer.
 
-A 4B model with an 8,192-token window answered across **32,000,000 tokens** in **653 ms** -
-on a 6 GB laptop card. Nothing left the machine.
+One app to load any GGUF model and work with it: chat with web search and tools, voice,
+pictures, computer use - and an OpenAI-compatible API and MCP for every other app you use.
+Its context reaches far past the model's window: up to **32M tokens**. Nothing leaves the machine.
 
 <br>
 
@@ -83,11 +84,11 @@ Computer use and the island are Windows only for now. Full notes: **[VLS 0.1.1 P
 
 ## Why VLS
 
-- **One program for local AI.** Models, chat, voice, pictures and an OpenAI-compatible API on one address, in one install, with a panel that explains itself.
-- **Memory that is not limited by the window.** Add a folder, a repository or a year of notes once; every question after that can reach all of it - up to 32M tokens.
+- **One app for running models locally.** Download or add a GGUF model, and VLS picks how it runs on your graphics card. Chat, voice, pictures and an OpenAI-compatible API on one address, in one install, with a panel that explains itself.
+- **More than the model's window.** With Velocity Context a model works across far more text than its window holds: add a folder, a repository or a year of notes once, and every question can reach all of it - up to 32M tokens.
 - **Private by construction.** No account, no telemetry, no Docker. The only outbound requests are the ones you ask for.
 
-Most local runners load a model and give you its window. VLS does that too, and adds what sits around the model: a memory far larger than the window, tools the model can use, a computer it can operate with your permission, and a way to see how it wrote each answer.
+Most local runners load a model and give you its window. VLS does that too, and adds what sits around the model: a context far larger than the window, tools the model can use, a computer it can operate with your permission, and a way to see how it wrote each answer.
 
 <picture>
   <source media="(prefers-color-scheme: light)" srcset=".github/screens/home-light.png">
