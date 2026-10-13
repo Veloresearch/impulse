@@ -1,0 +1,38 @@
+# Redraws the README's star history whenever someone stars the repository (and once a day, so
+# the time axis keeps up when nobody does).
+name: Star history
+
+on:
+  watch:
+    types: [started]
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: star-history
+  cancel-in-progress: true
+
+jobs:
+  draw:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Draw
+        run: node .github/scripts/stars.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit if changed
+        run: |
+          git add .github/stars-light.svg .github/stars-dark.svg
+          if git diff --cached --quiet; then exit 0; fi
+          git -c user.name=Veloresearch -c user.email=283560483+Veloresearch@users.noreply.github.com \
+            commit -m "Star history"
+          git pull --rebase
+          git push

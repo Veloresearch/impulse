@@ -500,9 +500,9 @@ way to get it fixed.
 
 <a href="https://star-history.com/#Veloresearch/velocity-local-services&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Veloresearch/velocity-local-services&type=Date&theme=dark">
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Veloresearch/velocity-local-services&type=Date">
-    <img alt="Star history of VLS" src="https://api.star-history.com/svg?repos=Veloresearch/velocity-local-services&type=Date" width="72%">
+    <source media="(prefers-color-scheme: dark)" srcset=".github/stars-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset=".github/stars-light.svg">
+    <img alt="Star history of VLS" src=".github/stars-light.svg" width="72%">
   </picture>
 </a>
 
