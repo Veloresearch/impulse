@@ -60,13 +60,12 @@ Its context reaches far past the model's window: up to **32M tokens**. Nothing l
 <br>
 
 - **Computer use.** The model opens apps, clicks, types and fills in forms. Four permission levels, off until you turn it on, and Esc, Stop or the top-left corner halts it at once. [More](#computer-use)
-- **The island.** A small bar at the top of the screen for a quick chat, your history, voice, contexts and live activity. Hidden until you need it. [More](#the-island)
 - **Talk drives the computer.** Say a task, interrupt at any time, answer permission questions with "yes" or "no".
 - **Writing in chat.** Instant typing in long chats, a draft per chat, `@` to attach a file or pick a context, `/` commands, and a token counter as the window fills. [More](#chat)
 - **Voice & audio settings.** Choose and test your microphone and speaker; input volume, noise suppression and echo cancellation.
 - **Starting VLS.** Opening it always shows its window; starting with Windows stays in the background.
 
-Computer use and the island are Windows only for now. Full notes: **[VLS 0.1.1 Preview 3](https://github.com/Veloresearch/velocity-local-services/releases/tag/v0.1.1-preview.3)** · [all releases](https://github.com/Veloresearch/velocity-local-services/releases)
+Computer use is Windows only for now. Full notes: **[VLS 0.1.1 Preview 3](https://github.com/Veloresearch/velocity-local-services/releases/tag/v0.1.1-preview.3)** · [all releases](https://github.com/Veloresearch/velocity-local-services/releases)
 
 </details>
 
@@ -76,7 +75,7 @@ Computer use and the island are Windows only for now. Full notes: **[VLS 0.1.1 P
 |---|---|
 | **Start** | [Why VLS](#why-vls) · [Install](#install) · [Questions](#questions-people-actually-ask) |
 | **Memory** | [Velocity Context](#velocity-context) · [Measured, not claimed](#measured-not-claimed) |
-| **Use it** | [Chat](#chat) · [Computer use](#computer-use) · [The island](#the-island) · [Look inside the model](#look-inside-the-model) |
+| **Use it** | [Chat](#chat) · [Computer use](#computer-use) · [Look inside the model](#look-inside-the-model) |
 | **Connect** | [Studio, Plugins and Apps](#studio-plugins-and-apps) · [Use it from the agent you already have](#use-it-from-the-agent-you-already-have) · [One address for everything](#one-address-for-everything) |
 | **Yours** | [Make it yours](#make-it-yours) · [See it](#see-it) · [Built on](#built-on) |
 
@@ -123,7 +122,7 @@ Settings. Removing it is deleting one folder; your models and memories live some
 |---|---|
 | **Graphics card** | Optional. A 6 GB card runs a 4B model with every layer on the card; the processor build works everywhere. |
 | **Windows installer** | The preview is not code-signed yet. If SmartScreen stops it, choose *More info → Run anyway*. |
-| **Linux** | Builds are packaged and tested less than Windows. Computer use and the island are Windows only for now. |
+| **Linux** | Builds are packaged and tested less than Windows. Computer use is Windows only for now. |
 | **Every build** | On the [releases page](https://github.com/Veloresearch/velocity-local-services/releases), with the [notes for the latest](https://github.com/Veloresearch/velocity-local-services/releases/latest). |
 
 <p align="center"><img src=".github/gifs/boot.gif" alt="The Velocity mark assembling as VLS starts" width="60%"></p>
@@ -260,7 +259,6 @@ Your local model can open apps, click, type and fill in forms. It reads each win
 - It never types into password fields, always asks before closing unsaved work, and never acts on a window you did not name.
 - Pick which screen it works on. Every action goes into an activity log.
 - It works with the sandbox: take something from the screen, process it in Python, put the result back.
-- Voice drives it too: say a task in [Talk](#the-island), interrupt at any time, answer approvals with "yes" or "no".
 
 **Measured.** Tested with Qwen3.5-4B on Notepad and Calculator tasks: 4 of 4 passed. Reading a window takes 40-120 ms, and an action takes about half a second.
 
@@ -272,33 +270,6 @@ Your local model can open apps, click, type and fill in forms. It reads each win
 </table>
 
 Computer use is new and Windows only. Start with *Ask before risky actions*, and check what matters.
-
-<p align="right"><sub><a href="#top">Back to top</a></sub></p>
-
-## The island
-
-A small bar at the top of the screen, hidden until you need it. Chat without opening VLS, pick up a conversation, talk, choose a context, or watch what VLS is doing.
-
-<p align="center"><img src=".github/gifs/island.gif" alt="The island opening from its pill into Chat, and an answer streaming in" width="100%"></p>
-
-**Open it** by holding the pointer at the top edge of the screen, pressing the shortcut (Alt+Space by default, changeable in Settings), or dragging a file to the top of the screen. It hides in full-screen apps and games.
-
-<table>
-<tr>
-<td width="50%"><img src=".github/island/island-chat.png" alt="The island's Chat section with a question and a short answer"><br><sub><b>Chat</b> - a quick question, without opening VLS</sub></td>
-<td width="50%"><img src=".github/island/island-history.png" alt="The island's History section with pinned and recent chats"><br><sub><b>History</b> - every chat, searchable</sub></td>
-</tr>
-<tr>
-<td width="50%"><img src=".github/island/island-talk.png" alt="The island's Talk section listening, with the permission level for tasks"><br><sub><b>Talk</b> - say a task; say "stop" to stop it</sub></td>
-<td width="50%"><img src=".github/island/island-activity.png" alt="The island's Activity section during a computer-use step in Calculator"><br><sub><b>Activity</b> - the current step, with Pause, Take over and Stop</sub></td>
-</tr>
-<tr>
-<td width="50%"><img src=".github/island/island-approval.png" alt="An approval card asking to allow VLS to click Equals in Calculator"><br><sub><b>Approvals</b> - Allow, Deny, or allow for this task</sub></td>
-<td width="50%"><img src=".github/island/island-pill.png" alt="The collapsed island showing a live computer-use step"><br><img src=".github/island/island-pill-paused.png" alt="The collapsed island showing a paused task"><br><sub><b>While VLS works</b> - a live bar for answers, downloads, loading and tasks</sub></td>
-</tr>
-</table>
-
-<p align="center"><img src=".github/screens/settings-island.png" alt="Settings for the island: show it, the keyboard shortcut, the top edge, and island options" width="100%"></p>
 
 <p align="right"><sub><a href="#top">Back to top</a></sub></p>
 
@@ -475,7 +446,7 @@ Hugging Face, searching the web from Chat, downloading what you chose, and check
 
 **Can I turn web search off?** Yes, in Chat's Tools menu. With it off, only questions that are plainly about today are looked up, and the Search button always searches.
 
-**Does the island work on Linux?** Not yet. The island and computer use are Windows only in Preview 3; the rest of VLS runs on both.
+**Does computer use work on Linux?** Not yet. Computer use is Windows only for now; the rest of VLS runs on both.
 
 **Is it open source?** No. VLS is free for personal use; companies need a licence - write to
 **contact@veloresearch.com**. See [LICENSE](LICENSE).
