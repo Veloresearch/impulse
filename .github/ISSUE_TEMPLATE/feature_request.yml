@@ -1,5 +1,5 @@
 name: Suggest a feature
-description: Something you'd like VLS to do, or to do better.
+description: Something you'd like Impulse to do, or to do better.
 title: "[Idea] "
 labels: ["enhancement"]
 body:
@@ -11,7 +11,7 @@ body:
   - type: textarea
     id: idea
     attributes:
-      label: What would you like VLS to do?
+      label: What would you like Impulse to do?
     validations:
       required: true
 
@@ -26,11 +26,11 @@ body:
   - type: dropdown
     id: area
     attributes:
-      label: Which part of VLS?
+      label: Which part of Impulse?
       multiple: true
       options:
         - Chat
-        - Contexts (Velocity Context)
+        - Contexts (Momentum)
         - Models and hardware
         - Computer use
         - The island

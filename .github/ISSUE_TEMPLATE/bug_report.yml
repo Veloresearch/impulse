@@ -1,12 +1,12 @@
 name: Report a bug
-description: Something in VLS doesn't work the way it should.
+description: Something in Impulse doesn't work the way it should.
 title: "[Bug] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to report this. VLS is a preview, so bug reports are the most useful thing you can give us.
+        Thanks for taking the time to report this. Impulse is a preview, so bug reports are the most useful thing you can give us.
         A screenshot or a short description of what you clicked helps more than a long explanation.
 
   - type: textarea
@@ -28,9 +28,9 @@ body:
   - type: input
     id: version
     attributes:
-      label: VLS version
-      description: Shown at the top of the sidebar, e.g. "0.1.1 Preview 3".
-      placeholder: 0.1.1 Preview 3
+      label: Impulse version
+      description: Shown at the top of the sidebar, e.g. "0.1.1 Preview 3.5". Older builds show it as VLS.
+      placeholder: 0.1.1 Preview 3.5
     validations:
       required: true
 
@@ -66,12 +66,12 @@ body:
   - type: dropdown
     id: area
     attributes:
-      label: Where in VLS?
+      label: Where in Impulse?
       multiple: true
       options:
         - Installing or updating
         - Chat
-        - Contexts (Velocity Context)
+        - Contexts (Momentum)
         - Models and downloads
         - Computer use
         - The island
