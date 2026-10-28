@@ -28,10 +28,21 @@ Run any AI model on your own computer, give it a memory of up to **32 million to
 
 <br>
 
-[![Release](https://img.shields.io/github/v/release/Veloresearch/impulse?label=release&color=7A6688&labelColor=1C1A1F&style=flat-square)](https://github.com/Veloresearch/impulse/releases/latest)
+[![Latest release](https://img.shields.io/github/v/release/Veloresearch/impulse?include_prereleases&label=latest&color=7A6688&labelColor=1C1A1F&style=flat-square)](https://github.com/Veloresearch/impulse/releases/latest)
+[![Released](https://img.shields.io/github/release-date-pre/Veloresearch/impulse?label=released&color=DCD5E2&labelColor=1C1A1F&style=flat-square)](https://github.com/Veloresearch/impulse/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/Veloresearch/impulse/total?label=downloads&color=7A6688&labelColor=1C1A1F&style=flat-square)](https://github.com/Veloresearch/impulse/releases)
-[![Stars](https://img.shields.io/github/stars/Veloresearch/impulse?color=DCD5E2&labelColor=1C1A1F&logo=github&logoColor=white&style=flat-square)](https://github.com/Veloresearch/impulse/stargazers)
+[![Latest downloads](https://img.shields.io/github/downloads-pre/Veloresearch/impulse/latest/total?label=latest%20release%20downloads&color=7A6688&labelColor=1C1A1F&style=flat-square)](https://github.com/Veloresearch/impulse/releases/latest)
+[![Stars](https://img.shields.io/github/stars/Veloresearch/impulse?color=DCD5E2&logo=github&logoColor=white&labelColor=1C1A1F&style=flat-square)](https://github.com/Veloresearch/impulse/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/Veloresearch/impulse?label=updated&color=DCD5E2&labelColor=1C1A1F&style=flat-square)](https://github.com/Veloresearch/impulse/commits)
+[![Issues](https://img.shields.io/github/issues/Veloresearch/impulse?color=DCD5E2&labelColor=1C1A1F&style=flat-square)](https://github.com/Veloresearch/impulse/issues)
+<br>
+[![Windows and Linux](https://img.shields.io/badge/Windows_·_Linux-x64-DCD5E2?labelColor=1C1A1F&style=flat-square)](#install)
+[![Graphics](https://img.shields.io/badge/NVIDIA_·_AMD_·_Intel-graphics-DCD5E2?labelColor=1C1A1F&style=flat-square)](#install)
 [![Momentum](https://img.shields.io/badge/Momentum-32M_tokens-7A6688?labelColor=1C1A1F&style=flat-square)](#momentum)
+[![API](https://img.shields.io/badge/API-OpenAI--compatible_·_MCP-DCD5E2?labelColor=1C1A1F&style=flat-square)](#one-address-for-everything)
+[![License](https://img.shields.io/badge/free-for_personal_use-DCD5E2?labelColor=1C1A1F&style=flat-square)](LICENSE)
+
+**[Technical report](https://veloresearch.com/research/momentum)** &nbsp;·&nbsp; **[Release notes](https://github.com/Veloresearch/impulse/releases/latest)** &nbsp;·&nbsp; **[veloresearch.com](https://veloresearch.com)** &nbsp;·&nbsp; **[X](https://x.com/velo_research)** &nbsp;·&nbsp; **[Hugging Face](https://huggingface.co/velocity-research)**
 
 <br>
 
@@ -47,11 +58,12 @@ Run any AI model on your own computer, give it a memory of up to **32 million to
 
 <table>
 <tr>
-<td width="33%" valign="top"><img src="assets/gifs/persona-wheel.gif" alt="The personality wheel in the message box: arrows and a drag turn it, each face shows how it would answer, and it closes into the button" width="100%"><br><sub><b>Personalities</b>: one spin</sub></td>
-<td width="33%" valign="top"><img src="assets/gifs/context-deck.gif" alt="The context deck opening as a cascade of cards, the Tokio context of 1.4M tokens attached as a chip, and a search inside the deck" width="100%"><br><sub><b>Momentum</b>: 1.4M tokens, one click</sub></td>
-<td width="33%" valign="top"><img src="assets/gifs/sources.gif" alt="Hovering a numbered citation in an answer, then Show sources listing the pages" width="100%"><br><sub><b>Sources</b>: every claim checked</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/persona-wheel.gif" alt="The personality wheel in the message box: arrows and a drag turn it, each face shows how it would answer, and it closes into the button" width="100%"><br><sub><b>Personalities</b>: one spin</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/context-deck.gif" alt="The context deck opening as a cascade of cards, the Tokio context of 1.4M tokens attached as a chip, and a search inside the deck" width="100%"><br><sub><b>Momentum</b>: 1.4M tokens, one click</sub></td>
 </tr>
 </table>
+
+<p align="center"><img src="assets/gifs/sources.gif" alt="Hovering a numbered citation in an answer, then Show sources listing the pages" width="100%"><br><sub><b>Sources</b>: every claim checked</sub></p>
 <!-- slot:pdf - re-record after the fixes: the files/PDF clip replaces "sources" in this row -->
 
 <br>
