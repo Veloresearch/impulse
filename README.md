@@ -2,19 +2,17 @@
 
 <div align="center">
 
-<img src="assets/brand/impulse-animation.gif" alt="The Impulse icon animating into place" width="160">
-
-<br><br>
+<br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/brand/impulse-lockup-on-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/brand/impulse-lockup-on-light.svg">
-  <img src="assets/brand/impulse-lockup-on-light.svg" alt="Impulse by Velocity" width="340">
+  <img src="assets/brand/impulse-lockup-on-light.svg" alt="Impulse by Velocity" width="460">
 </picture>
 
 ### Intelligence with longer memory.
 
-**Impulse (formerly VLS)** runs AI models on your own computer. Load any GGUF model and work with it:
+**Impulse** runs AI models on your own computer. Load any GGUF model and work with it:
 chat with web search and tools, voice, pictures, computer use, and an OpenAI-compatible API and MCP
 for every other app you use. With **Momentum**, a model can reach far past its own window: up to
 **32M tokens** of your material. Nothing leaves the machine.
@@ -37,15 +35,9 @@ for every other app you use. With **Momentum**, a model can reach far past its o
 
 <br>
 
-<img src=".github/gifs/hero.gif" alt="Chat in Impulse: a question about the ESP32-S3 is searched on the web, three pages are read, and the answer streams in with numbered sources" width="100%">
+<img src="assets/gifs/hook.gif" alt="Chat in Impulse: a question about the latest Python release is searched on the web, six pages are read in about two seconds, and the answer arrives with numbered sources" width="100%">
 
-<sub>A real app window: the question is looked up first, the pages are read, and the answer cites them.</sub>
-
-<br><br>
-
-<a href="https://youtu.be/QZ6p2Il0MDs"><img src="https://img.youtube.com/vi/QZ6p2Il0MDs/maxresdefault.jpg" alt="Watch the app in action on YouTube" width="72%"></a>
-
-<sub>▶ <a href="https://youtu.be/QZ6p2Il0MDs"><b>Watch it in action</b></a> (YouTube)</sub>
+<sub>A real recording on a 6 GB laptop card: the question is looked up, the pages are read, and the answer cites them. Nothing runs in the cloud.</sub>
 
 <br><br>
 
@@ -55,23 +47,16 @@ for every other app you use. With **Momentum**, a model can reach far past its o
 
 <br>
 
-> [!NOTE]
-> **VLS is now Impulse, and Velocity Context is now Momentum.** Same app, same data, same address.
-> Updating from VLS keeps every model, chat, context and setting where it was. The API stays on
-> `http://127.0.0.1:11500/v1` with the same key, the `impulse` command is added and `vls` keeps
-> working, and every `VLS_*` environment variable is still read (an `IMPULSE_*` one takes precedence).
-> This repository moved from `Veloresearch/velocity-local-services` to `Veloresearch/impulse`; old links,
-> download URLs and install commands redirect here.
 
 ## Contents
 
 | | |
 |---|---|
-| **Start** | [Why Impulse](#why-impulse) · [Install](#install) · [FAQ](#faq) |
+| **See it** | [Why Impulse](#why-impulse) · [What it does](#what-it-does) · [The details](#the-details) |
 | **Memory** | [Momentum](#momentum) · [Measured, not claimed](#measured-not-claimed) |
-| **Use it** | [Chat](#chat) · [Computer use](#computer-use) · [Look inside the model](#look-inside-the-model) |
-| **Connect** | [Studio, Plugins and Apps](#studio-plugins-and-apps) · [Use it from the agent you already have](#use-it-from-the-agent-you-already-have) · [One address for everything](#one-address-for-everything) |
-| **Yours** | [Make it yours](#make-it-yours) · [See it](#see-it) · [Built on](#built-on) |
+| **Use it** | [Chat](#chat) · [Computer use](#computer-use) · [Look inside the model](#look-inside-the-model) · [Studio, Plugins and Apps](#studio-plugins-and-apps) |
+| **Set up** | [Make it yours](#make-it-yours) · [Install](#install) · [FAQ](#faq) |
+| **Connect** | [Use it from the agent you already have](#use-it-from-the-agent-you-already-have) · [One address for everything](#one-address-for-everything) |
 
 <br>
 
@@ -84,9 +69,341 @@ for every other app you use. With **Momentum**, a model can reach far past its o
 Most local runners load a model and give you its window. Impulse does that too, and adds what sits around the model: a memory far larger than the window, tools the model can use, a computer it can operate with your permission, and a way to see how it wrote each answer.
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset=".github/screens/home-light.png">
-  <img src=".github/screens/home-p3.png" alt="Home: the loaded model, its writing speed and graphics memory, quick prompts and recent chats" width="100%">
+  <source media="(prefers-color-scheme: light)" srcset="assets/screens/home-light.png">
+  <img src="assets/screens/home-dark.png" alt="Home: the loaded model and its writing speed, what Momentum keeps, graphics memory, and recent chats" width="100%">
 </picture>
+
+<p align="right"><sub><a href="#top">Back to top</a></sub></p>
+
+<a name="what-it-does"></a>
+## What it does
+
+Real recordings of the app with a 9B model on a 6 GB laptop card. Nothing is staged or edited; long waits are sped up and marked.
+
+<table>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/persona-wheel.gif" alt="The personality wheel in the message box: arrows and a drag turn it, each face shows how it would answer, and it closes into the button" width="100%"><br><sub><b>Personalities</b>: spin the wheel and the face in the middle answers you, from Sarcastic to Professional</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/context-deck.gif" alt="The context deck opening as a cascade of cards, the Tokio context of 1.4M tokens attached as a chip, and a search inside the deck" width="100%"><br><sub><b>Momentum in every chat</b>: pick a context from the deck and the chat can reach all of it, here 1.4M tokens of source code</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/excel.gif" alt="A request for a 12-month student budget answered with an Excel file card" width="100%"><br><sub><b>Files, made for you</b>: ask for a spreadsheet and get a real .xlsx you can open beside the chat</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/chart.gif" alt="A bar chart of the planets drawn from the answer" width="100%"><br><sub><b>Charts from the answer</b>: numbers become a chart you can open beside the conversation</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/csv.gif" alt="A CSV dropped into the chat, then a question about food spending answered from it" width="100%"><br><sub><b>Your own data</b>: drop a CSV and ask about it</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/latex.gif" alt="The quadratic formula and a worked solution rendered as typeset maths" width="100%"><br><sub><b>Maths, typeset</b>: formulas render properly, step by step</sub></td>
+</tr>
+</table>
+
+<p align="right"><sub><a href="#top">Back to top</a></sub></p>
+
+<a name="momentum"></a>
+## Momentum
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/momentum-lockup-on-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/brand/momentum-lockup-on-light.svg">
+  <img src="assets/brand/momentum-lockup-on-light.svg" alt="Momentum by Velocity" width="300">
+</picture>
+
+### Your knowledge. *Within reach.*
+
+**Momentum** gives your AI relevant evidence from millions of tokens.
+Momentum selects the passages your model needs, within the window it already has.
+
+Use it in place of a large native context window: the model keeps a small, fast window, and Momentum
+supplies what each question needs. You add material once (a folder, a repository, your notes, or
+simply the conversation as it happens) and every question after that can reach all of it.
+
+Benchmarked across **32M tokens**, configurable up to **1B**, and shown working on the full Linux kernel source.
+
+<p align="center">
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/brand-art/momentum-how-dark.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/brand-art/momentum-how-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand-art/momentum-how-animated-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/brand-art/momentum-how-animated-light.svg">
+  <img src="assets/brand-art/momentum-how-light.png" alt="How Momentum answers: your material of up to 32M tokens; for one question it selects three passages; the question and those passages fit in the model’s normal 8,192-token window; the answer cites passages 1, 2 and 3" width="100%">
+</picture>
+</p>
+
+| | |
+|---|---|
+| **Local processing** | Material is processed on the machine where Momentum is installed. |
+| **Works with the model's own tokenizer** | Sizes are counted in the loaded model's tokens, so what you see is what the model sees. |
+| **No embedding model or vector database** | Not RAG: no chunk size and no second service to run. |
+| **Portable .mfyc files** | A context is a file you own, built in seconds and independent of the model you load. |
+| **Inspectable source passages** | Every answer shows the exact passages the model was given. |
+
+If you point Impulse at a cloud model, the passages Momentum selects for a question are sent to that provider.
+
+**Answer time stays under 0.8 s**, from 1M to 32M tokens (median; the build is a one-time text pass):
+
+| context | one-time build | answer, median | answer, p90 |
+|---|---:|---:|---:|
+| 1M tokens | 0.5 s | 703 ms | 890 ms |
+| 5M tokens | 2.6 s | 488 ms | 982 ms |
+| 10M tokens | 5.3 s | 570 ms | 1 081 ms |
+| 15M tokens | 8.0 s | 643 ms | 1 132 ms |
+| 20M tokens | 10.6 s | 708 ms | 1 117 ms |
+| 25M tokens | 13.4 s | 752 ms | 1 128 ms |
+| **32M tokens** | **17.2 s** | **653 ms** | **1 111 ms** |
+
+<p align="center"><img src="assets/screens/contexts.png" alt="Contexts: make a context from a folder in three steps, and the memories kept from conversations with their size in tokens" width="100%"></p>
+
+<a name="measured-not-claimed"></a>
+### Measured, not claimed
+
+One laptop: **RTX 3060 Laptop, 6 GB**, **Qwen3.5-4B-Q4_K_M**, an **8,192-token window** throughout.
+The full method, the per-task tables and the limits are in the
+**[evaluation report](https://veloresearch.com/research/momentum)**
+([PDF](https://veloresearch.com/reports/velocity-context-evaluation.pdf)).
+
+| benchmark | result |
+|---|---|
+| **NVIDIA RULER at 128K**, 13 tasks, 20 samples each, NVIDIA's harness unmodified | **90.0** average |
+| **BABILong QA1**, 100 published samples per length | **92.0%** at 128K, **86.0%** at 1M; **0.0%** with the text removed |
+| **Answer time at 32M tokens** | **653 ms** median |
+
+**Beyond 128K**, on the app's built-in ladder with nine of RULER's tasks and five samples per cell. This is a
+separate benchmark lane, reported on its own and never averaged with the result above:
+
+| | 1M | 5M | 10M | 15M | 20M | 25M | 32M |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| **nine-task average** | **97.8** | **95.6** | **100** | **97.8** | **97.8** | **100** | **100** |
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand-art/momentum-ladder-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/brand-art/momentum-ladder-light.svg">
+  <img src="assets/brand-art/momentum-ladder-light.png" alt="Line chart: nine-task average by context length. 1M 97.8, 5M 95.6, 10M 100, 15M 97.8, 20M 97.8, 25M 100, 32M 100" width="100%">
+</picture><br><br>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand-art/momentum-latency-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/brand-art/momentum-latency-light.svg">
+  <img src="assets/brand-art/momentum-latency-light.png" alt="Line chart: median answer time by context length. 1M 703 ms, 5M 488 ms, 10M 570 ms, 15M 643 ms, 20M 708 ms, 25M 752 ms, 32M 653 ms" width="100%">
+</picture>
+</div>
+
+<br>
+
+Every benchmark can be run on your own machine from the panel.
+
+<p align="right"><sub><a href="#top">Back to top</a></sub></p>
+
+## Chat
+
+Text, photos and files, voice with live transcription, and a model that looks things up before it answers.
+
+**Search first, with sources.** A question about a part number, a price, a datasheet or anything recent is searched before the model writes a word. You watch the pages being read, and every claim in the answer points back to its source.
+
+**Exact maths.** A built-in calculator works with units, constants and radio and circuit formulas, and shows every step. The model does not do arithmetic in its head.
+
+<table>
+<tr>
+<td width="50%"><img src="assets/gifs/mermaid.gif" alt="A flowchart of how a heat pump heats a house, drawn inside the answer" width="100%"><br><sub><b>Diagrams</b>: flowcharts drawn inside the answer</sub></td>
+<td width="50%"><img src="assets/gifs/tokyo.gif" alt="The time in Tokyo answered at once" width="100%"><br><sub><b>Instant facts</b>: the time anywhere, answered at once</sub></td>
+</tr>
+</table>
+
+**Drawings for electronics.** Schematics are checked before you see them: every pin connected, every value in range. Pin-outs, wiring diagrams and antenna aiming are drawn the same way, and a schematic exports to KiCad.
+
+**A Python sandbox.** The model writes and runs Python in the page, with numpy, pandas and matplotlib and no internet needed, and the files it makes appear as cards you can open or save.
+
+<p align="center"><img src="assets/gifs/file-preview.gif" alt="A spreadsheet the model made, opened in the side panel beside the chat" width="100%"><br><sub><b>Open beside</b>: the file it made, previewed next to the chat</sub></p>
+
+**Everything an answer needs around it.** Save any answer as PDF, Markdown or an image. See what it cost: time to first words, writing speed, tokens read and written, and how much of the window it used. Find anything in a long conversation with Ctrl+F.
+
+<table>
+<tr>
+<td width="50%"><img src="assets/screens/chat-save-as.png" alt="The Save menu under an answer: PDF, Markdown, image, or copy as image"><br><sub><b>Save as</b>: PDF, Markdown or an image</sub></td>
+<td width="50%"><img src="assets/screens/chat-details.png" alt="About this answer: model, thinking, first words after, total time, writing speed, tokens read and written, and how much of the window it used"><br><sub><b>Answer details</b>: what one answer took</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="assets/screens/chat-commands.png" alt="The message box with slash commands: search, pdf, excel, chart, new and model"><br><sub><b>/ commands</b>: search, a PDF, a spreadsheet, a chart, a model</sub></td>
+<td width="50%"><img src="assets/screens/chat-mention.png" alt="The message box with @ suggestions: a file, a photo, and this chat's memory"><br><sub><b>@ mentions</b>: attach a file or answer from a memory</sub></td>
+</tr>
+</table>
+
+Enter sends, Shift+Enter starts a new line, Esc stops, ↑ edits your last message. Long pasted text becomes a chip with its size in tokens.
+
+<p align="right"><sub><a href="#top">Back to top</a></sub></p>
+
+## Computer use
+
+Your local model can open apps, click, type and fill in forms. It reads each window's buttons and fields directly instead of guessing from pixels, and falls back to a screenshot for apps that do not describe themselves.
+
+**Its own cursor.** A second pointer shows where it is going and what it is doing. Your mouse stays yours.
+
+**You decide how much it may do.** Watch only, Ask every time, Ask before risky actions (the default), or Act without asking. It is off until you turn it on.
+
+**You can always stop it.** Esc, Stop, or moving the mouse into the top-left corner halts it at once. Pause, Take over and Continue hand control back and forth.
+
+- It never types into password fields, always asks before closing unsaved work, and never acts on a window you did not name.
+- Choose which screen it works on. Every action is recorded in an activity log.
+- It works with the sandbox: take something from the screen, process it in Python, put the result back.
+
+**Measured.** Tested with Qwen3.5-4B on Notepad and Calculator tasks: 4 of 4 passed. Reading a window takes 40-120 ms, and an action takes about half a second.
+
+<p align="center"><img src="assets/screens/settings-computer.png" alt="Settings, Computer use: allow computer use, the four permission levels and the screen it works on" width="100%"><br><sub><b>Computer use</b>: one switch, four permission levels, and the screen it works on</sub></p>
+
+Computer use is new and Windows only. Start with *Ask before risky actions*, and check what matters.
+
+<p align="right"><sub><a href="#top">Back to top</a></sub></p>
+
+## Look inside the model
+
+How the last answer was written, one token at a time: what the model chose, how sure it was, and what it nearly said. Then the model itself: every layer, read straight from its file.
+
+<p align="center"><img src="assets/gifs/lab-replay.gif" alt="A haiku replayed token by token, with the five candidates at each step, the model's certainty and the writing speed" width="100%"></p>
+
+<table>
+<tr>
+<td width="50%"><img src="assets/screens/lab-weights.png" alt="Weights view of Ternary Bonsai 2 9B: the 33 layers and the tensors of layer 0, drawn from the model file"><br><sub><b>Weights</b>: every layer, brighter where the weights are larger</sub></td>
+<td width="50%"><img src="assets/screens/lab-shape.png" alt="Shape view: 33 layers, width 4,096, 16 attention heads, 248K vocabulary, 262K trained context, 9.2B parameters"><br><sub><b>Shape</b>: how the model is built, as its file describes it</sub></td>
+</tr>
+</table>
+
+<p align="right"><sub><a href="#top">Back to top</a></sub></p>
+
+<a name="studio-plugins-and-apps"></a>
+## Studio, Plugins and Apps
+
+| | |
+|---|---|
+| **Studio** | Images and video from local diffusion models, speech in over a hundred Piper voices, all on this machine. |
+| **Models** | Search Hugging Face from the panel; each build is checked against your card *before* it downloads. |
+| **Plugins** | Any MCP server (a folder, GitHub, a database) with one-click presets. Enabled plugins offer their tools in Chat. |
+| **Apps** | One-click connection for opencode and Hermes Agent; one address for everything else. |
+| **Mesh** | Every machine in your home as one: a model too big for one card is split across them. |
+
+<table>
+<tr>
+<td width="50%"><picture><source media="(prefers-color-scheme: light)" srcset="assets/screens/studio-light.png"><img src="assets/screens/studio-dark.png" alt="Studio: image mode with the two set-up steps, the engine and a model, beside shape and quality controls"></picture><br><sub><b>Studio</b>: pictures, video and speech</sub></td>
+<td width="50%"><picture><source media="(prefers-color-scheme: light)" srcset="assets/screens/models-hugging-face-light.png"><img src="assets/screens/models-hugging-face-dark.png" alt="Models: live Hugging Face results, with the models recommended for this graphics card and whether each fits"></picture><br><sub><b>Models</b>: Hugging Face search, checked against your card before it downloads</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="assets/screens/plugins.png" alt="Plugins: one-click presets for files, web pages, GitHub, SQLite, memory and time, and any other MCP server"><br><sub><b>Plugins</b>: MCP servers, started and monitored by Impulse</sub></td>
+<td width="50%"><img src="assets/screens/apps.png" alt="Apps: opencode ready to connect with memory per project, Hermes Agent with its own Connect button"><br><sub><b>Apps</b>: connect an agent in one click</sub></td>
+</tr>
+</table>
+
+<p align="center"><br>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/brand-art/impulse-how-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/brand-art/impulse-how-light.svg">
+  <img src="assets/brand-art/impulse-how-light.png" alt="How Impulse works: the Impulse panel and your agents and scripts reach one address (OpenAI-compatible API and MCP at 127.0.0.1:11500/v1); a router sends each request to the models (text with llama.cpp, pictures with stable-diffusion.cpp, voice with Piper and faster-whisper), to tools (web search, files, Python, calculator, MCP plugins, computer use on Windows) and to Momentum contexts of up to 32M tokens" width="100%">
+</picture>
+<br><br></p>
+
+<p align="right"><sub><a href="#top">Back to top</a></sub></p>
+
+<!-- details:start -->
+<a name="the-details"></a>
+## The details
+
+The small things, recorded in the real app.
+
+**In a chat**
+
+<table>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/thinking-level.gif" alt="The thinking-level slider in the message box, its label rolling from Instant through Max" width="100%"><br><sub><b>Thinking level</b>: Instant to Max on one slider, with a rolling label</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/thought-for.gif" alt="An answer that starts with a Thought for label above it" width="100%"><br><sub><b>Thought for</b>: how long it thought, folded into one line</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/tools.gif" alt="The Tools menu switching Calculator and Schematics off and on, the tools pill changing width" width="100%"><br><sub><b>Tools</b>: switch tools on and off; the pill shrinks and grows to match</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/globe.gif" alt="The Search pill in the message box toggled off and on" width="100%"><br><sub><b>Web search</b>: one tap turns searching the web on or off</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/sources.gif" alt="Hovering a numbered citation in an answer, then Show sources listing the pages" width="100%"><br><sub><b>Sources</b>: every claim points to its page; all sources one tap away</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/tool-fold.gif" alt="The Searched the web step expanding to show the query and pages, then folding again" width="100%"><br><sub><b>Tool steps</b>: what it searched, folded to one line and open on a click</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/writing-speed.gif" alt="The pill at the top showing Writing an answer and the speed in tokens per second" width="100%"><br><sub><b>Writing speed</b>: tokens per second, live while it writes</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/stop-regenerate.gif" alt="A long answer stopped mid-way, then regenerated" width="100%"><br><sub><b>Stop and regenerate</b>: stop an answer mid-way, ask again</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/versions.gif" alt="An answer with its version switcher going from 2/2 to 1/2 and back" width="100%"><br><sub><b>Answer versions</b>: page between answers with ‹ 1/2 ›</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/edit.gif" alt="Pressing the up arrow in an empty message box to edit the last question, then sending it" width="100%"><br><sub><b>Edit with ↑</b>: press ↑ to change your last message and send it again</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/time.gif" alt="Asking what time it is and getting the time and date at once" width="100%"><br><sub><b>The time</b>: answered at once, from the clock</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/copy.gif" alt="Copying an answer and the confirmation that follows" width="100%"><br><sub><b>Copy</b>: one click, with a confirmation</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/slash.gif" alt="The slash menu opening in the message box and narrowing to /pdf and then /search" width="100%"><br><sub><b>/ commands</b>: type / for every command, a letter narrows it</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/drop.gif" alt="A CSV file dragged onto the window: a drop target appears and the file lands as a chip" width="100%"><br><sub><b>Drop a file</b>: drag it onto the window and it joins the chat</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/folders.gif" alt="A new folder made in the chat list and a chat moved into it" width="100%"><br><sub><b>Folders</b>: group chats in folders</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/pin-rename.gif" alt="A chat renamed by double-clicking its title, then pinned to the top of the list" width="100%"><br><sub><b>Rename and pin</b>: double-click a chat to rename it, pin it to the top</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/chat-search.gif" alt="Typing winter into the chat search: the list narrows and the matching words are highlighted" width="100%"><br><sub><b>Find a chat</b>: search every chat, with the matching words marked</sub></td>
+</tr>
+</table>
+
+**Around the app**
+
+<table>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/load.gif" alt="Loading Ternary Bonsai 2 9B from its card: the load sheet shows memory per chat and that every layer fits the graphics card" width="100%"><br><sub><b>Load a model</b>: the sheet says what fits your card before it starts</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/palette.gif" alt="The command palette opening with Ctrl+K and jumping to Settings, Appearance" width="100%"><br><sub><b>Ctrl+K</b>: every page, setting and action in one search</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/shortcuts.gif" alt="The keyboard shortcuts sheet opening with Ctrl+/ and scrolling" width="100%"><br><sub><b>Ctrl+/</b>: every keyboard shortcut on one sheet</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/theme.gif" alt="Switching the theme from Dark to Light, Cream, Matrix and back" width="100%"><br><sub><b>Themes</b>: Dark, Light, Cream and Matrix, applied at once</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/accent.gif" alt="Clicking through accent colours; the selection colour changes across the app" width="100%"><br><sub><b>Accent colour</b>: ten accents, carried across the whole app</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/font.gif" alt="Switching the app font between Inter, System and Rounded" width="100%"><br><sub><b>Fonts</b>: Inter, the system font or a rounded one</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><img src="assets/gifs/studio-find.gif" alt="Studio without an image model: Find a model opens the Hugging Face image models that fit this computer" width="100%"><br><sub><b>Find a model</b>: from an empty Studio to the image models that run here</sub></td>
+<td width="50%" valign="top"><img src="assets/gifs/tour.gif" alt="The guided tour stepping from the model picker to the message box and web search" width="100%"><br><sub><b>Guided tour</b>: a short tour points at each place the first time</sub></td>
+</tr>
+</table>
+
+<p align="right"><sub><a href="#top">Back to top</a></sub></p>
+<!-- details:end -->
+
+## Make it yours
+
+**Home and the sidebar, arranged your way.** Drag widgets by their handles, resize them, add or remove what you do not use. The sidebar shows what you choose, in your order, under your headings.
+
+<table>
+<tr>
+<td width="50%"><img src="assets/gifs/home-edit.gif" alt="Home in edit mode: a widget dragged to a new place and another resized" width="100%"><br><sub><b>Arranging Home</b></sub></td>
+<td width="50%"><img src="assets/screens/settings-sidebar.png" alt="Settings, Appearance, Sidebar and Home: every page in its group, in order, each one can be hidden"><br><sub><b>Sidebar</b></sub></td>
+</tr>
+</table>
+
+**Themes.** Dark, Slate, Light and Cream, or follow the system, with nine accents.
+
+<table>
+<tr>
+<td width="50%"><img src="assets/screens/home-light.png" alt="Home in the Light theme"><br><sub><b>Light</b></sub></td>
+<td width="50%"><picture><source media="(prefers-color-scheme: light)" srcset="assets/screens/settings-appearance-light.png"><img src="assets/screens/settings-appearance-dark.png" alt="Settings, Appearance: seven themes, ten accent colours and three fonts"></picture><br><sub><b>Appearance</b>: themes, accents and fonts</sub></td>
+</tr>
+</table>
+
+**Your account.** A name for the greeting, and an optional password required before the panel opens. Apps keep working with the API key; the password only protects the panel.
+
+**Backups and restore.** Everything Impulse keeps (chats, preferences, service settings, contexts) in one file you can store anywhere, on a schedule if you like, and restore on a new machine.
+
+<table>
+<tr>
+<td width="50%" align="center"><img src="assets/gifs/mobile-nav.gif" alt="Impulse on a phone: the floating navigation bar moving between Home, Chat, Models and Settings" width="300"><br><sub><b>On a phone</b>: the same panel, with a floating bar</sub></td>
+<td width="50%"><img src="assets/screens/settings-data.png" alt="Settings, Data: back up chats, panel preferences, service settings and the list of models"><br><sub><b>Data</b>: back up and restore</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="assets/screens/settings-voice.png" alt="Settings, Voice and audio: microphone, input level and volume, noise suppression, echo cancellation and the speaker"><br><sub><b>Voice & audio</b>: microphone and speaker, tested in place</sub></td>
+<td width="50%"><img src="assets/screens/system.png" alt="Hardware: everything working, the graphics card, memory and processor, live, and what uses the graphics memory"><br><sub><b>System</b>: what the machine has and what is using it</sub></td>
+</tr>
+</table>
+
+**A window or a browser.** Impulse opens in its own window. The same panel works in any browser on this computer at `http://127.0.0.1:11500`.
 
 <p align="right"><sub><a href="#top">Back to top</a></sub></p>
 
@@ -119,211 +436,23 @@ Removing Impulse means deleting one folder; your models and memories are stored 
 | **Linux** | Builds are packaged and tested less than Windows. Computer use is Windows only for now. |
 | **Every build** | On the [releases page](https://github.com/Veloresearch/impulse/releases), with the [notes for the latest](https://github.com/Veloresearch/impulse/releases/latest). |
 
-<p align="center"><img src=".github/gifs/boot.gif" alt="The Velocity mark assembling as the app starts" width="60%"></p>
+<p align="center"><img src="assets/gifs/boot.gif" alt="The Impulse mark turning into place as the app starts, then the words Impulse by Velocity" width="52%"><br><sub>Starting Impulse (<a href="assets/gifs/boot.mp4">MP4</a>)</sub></p>
+
+**The first start shows you around.** Pick a language and a name, choose how much of the app you want
+to see, and Impulse tells you what this computer can run before you download anything.
+
+<table>
+<tr>
+<td width="33%"><img src="assets/screens/onboarding-welcome.png" alt="Welcome to Impulse: chat with a model, give it your documents, use it from your apps"><br><sub><b>Welcome</b></sub></td>
+<td width="33%"><img src="assets/screens/onboarding-computer.png" alt="Your computer: the graphics card, memory and processor Impulse found, and what they are good for"><br><sub><b>Your computer</b>, read before any download</sub></td>
+<td width="33%"><img src="assets/screens/onboarding-first-steps.png" alt="Three steps to a first answer: get a model (done), load it, ask it something"><br><sub><b>Three steps</b> to a first answer</sub></td>
+</tr>
+</table>
 
 <p align="right"><sub><a href="#top">Back to top</a></sub></p>
-
-<a name="momentum"></a>
-## Momentum
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/brand/momentum-lockup-on-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/brand/momentum-lockup-on-light.svg">
-  <img src="assets/brand/momentum-lockup-on-light.svg" alt="Momentum by Velocity" width="300">
-</picture>
-
-### Your knowledge. *Within reach.*
-
-**Momentum (formerly Velocity Context)** gives your AI relevant evidence from millions of tokens.
-Momentum selects the passages your model needs, within the window it already has.
-
-Use it in place of a large native context window: the model keeps a small, fast window, and Momentum
-supplies what each question needs. You add material once (a folder, a repository, your notes, or
-simply the conversation as it happens) and every question after that can reach all of it.
-
-Benchmarked across **32M tokens**, configurable up to **1B**, and shown working on the full Linux kernel source.
-
-<div align="center"><img src=".github/reach.svg" alt="" width="100%"></div>
-
-| | |
-|---|---|
-| **Local processing** | Material is processed on the machine where Momentum is installed. |
-| **Works with the model's own tokenizer** | Sizes are counted in the loaded model's tokens, so what you see is what the model sees. |
-| **No embedding model or vector database** | Not RAG: no chunk size and no second service to run. |
-| **Portable .mfyc files** | A context is a file you own, built in seconds and independent of the model you load. |
-| **Inspectable source passages** | Every answer shows the exact passages the model was given. |
-
-If you point Impulse at a cloud model, the passages Momentum selects for a question are sent to that provider.
-
-| context | one-time build | answer, median | answer, p90 |
-|---|---:|---:|---:|
-| 1M tokens | 0.5 s | 703 ms | 890 ms |
-| 10M tokens | 5.3 s | 570 ms | 1 081 ms |
-| 20M tokens | 10.6 s | 708 ms | 1 117 ms |
-| **32M tokens** | **17.2 s** | **653 ms** | **1 111 ms** |
-
-<p align="center"><img src=".github/screens/contexts-p3.png" alt="Contexts: four memories with their size in tokens, how full each is, and which apps use them" width="100%"></p>
-
-<a name="measured-not-claimed"></a>
-### Measured, not claimed
-
-One laptop: **RTX 3060 Laptop, 6 GB**, **Qwen3.5-4B-Q4_K_M**, an **8,192-token window** throughout.
-The full method, the per-task tables and the limits are in the
-**[evaluation report](https://veloresearch.com/research/momentum)**
-([PDF](https://veloresearch.com/reports/velocity-context-evaluation.pdf)).
-
-| benchmark | result |
-|---|---|
-| **NVIDIA RULER at 128K**, 13 tasks, 20 samples each, NVIDIA's harness unmodified | **90.0** average |
-| **BABILong QA1**, 100 published samples per length | **92.0%** at 128K, **86.0%** at 1M; **0.0%** with the text removed |
-| **Answer time at 32M tokens** | **653 ms** median |
-
-**Beyond 128K**, on the app's built-in ladder with nine of RULER's tasks and five samples per cell. This is a
-separate benchmark lane, reported on its own and never averaged with the result above:
-
-| | 1M | 5M | 10M | 15M | 20M | 25M | 32M |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| **nine-task average** | **97.8** | **95.6** | **100** | **97.8** | **97.8** | **100** | **100** |
-
-<div align="center">
-<img src=".github/chart-ladder.svg" alt="Nine-task averages from 1M to 32M tokens" width="100%"><br><br>
-<img src=".github/chart-latency.svg" alt="Median answer time from 1M to 32M tokens" width="100%">
-</div>
-
-<br>
-
-Every benchmark can be run on your own machine from the panel.
-
-<p align="right"><sub><a href="#top">Back to top</a></sub></p>
-
-## Chat
-
-Text, photos and files, voice with live transcription, and a model that looks things up before it answers.
-
-**Search first, with sources.** A question about a part number, a price, a datasheet or anything recent is searched before the model writes a word. You watch the pages being read, and every claim in the answer points back to its source.
-
-**Exact maths.** A built-in calculator works with units, constants and radio and circuit formulas, and shows every step. The model does not do arithmetic in its head.
-
-<table>
-<tr>
-<td width="50%"><img src=".github/screens/chat-calculator.png" alt="A calculator step card showing the steps for a 433 MHz dipole antenna"><br><sub><b>Calculator</b>: the expression, every step and the result, then the answer</sub></td>
-<td width="50%"><img src=".github/screens/chat-chart.png" alt="A bar chart comparing two series of monthly figures drawn inside an answer"><br><sub><b>Charts</b>: drawn from the numbers in the answer, with the data one tab away</sub></td>
-</tr>
-</table>
-
-**Drawings for electronics.** Schematics are checked before you see them: every pin connected, every value in range. Pin-outs, wiring diagrams and antenna aiming are drawn the same way, and a schematic exports to KiCad.
-
-<table>
-<tr>
-<td width="50%"><img src=".github/screens/chat-schematic.png" alt="A schematic of an NPN transistor driving a 5 V relay from a 3.3 V GPIO, with a flyback diode"><br><sub><b>Schematic</b>: a relay driven from a 3.3 V pin, sized and checked</sub></td>
-<td width="50%"><img src=".github/screens/chat-pinout.png" alt="An ATtiny85 pin-out with power, ground, analog and communication pins coloured"><br><sub><b>Pin-out</b>: looked up in the datasheet, then drawn</sub></td>
-</tr>
-</table>
-
-**A Python sandbox.** The model writes and runs Python in the page, with numpy, pandas and matplotlib and no internet needed, and the files it makes appear as cards you can open or save.
-
-<p align="center"><img src=".github/screens/chat-sandbox.png" alt="A Python run that wrote sales.csv and sales.png, both shown as file cards with previews" width="100%"></p>
-
-**Everything an answer needs around it.** Save any answer as PDF, Markdown or an image. See what it cost: time to first words, writing speed, tokens read and written, and how much of the window it used. Find anything in a long conversation with Ctrl+F.
-
-<table>
-<tr>
-<td width="50%"><img src=".github/screens/chat-save-as.png" alt="The Save menu under an answer: PDF, Markdown, image, or copy as image"><br><sub><b>Save as</b>: PDF, Markdown or an image</sub></td>
-<td width="50%"><img src=".github/screens/chat-details.png" alt="About this answer: model, first words after, total time, writing speed, tokens read and written, window used"><br><sub><b>Answer details</b>: what one answer took</sub></td>
-</tr>
-<tr>
-<td width="50%"><img src=".github/screens/chat-commands.png" alt="The composer with slash commands: model, think, talk, new, clear"><br><sub><b>/ commands</b>: load a model, set thinking, start voice</sub></td>
-<td width="50%"><img src=".github/screens/chat-mention.png" alt="The composer with @ suggestions: a file, a photo, this chat's memory, and contexts"><br><sub><b>@ mentions</b>: attach a file or answer from a context</sub></td>
-</tr>
-</table>
-
-Enter sends, Shift+Enter starts a new line, Esc stops, ↑ edits your last message. Long pasted text becomes a chip with its size in tokens.
-
-<p align="right"><sub><a href="#top">Back to top</a></sub></p>
-
-## Computer use
-
-Your local model can open apps, click, type and fill in forms. It reads each window's buttons and fields directly instead of guessing from pixels, and falls back to a screenshot for apps that do not describe themselves.
-
-<table>
-<tr>
-<td width="46%" valign="top"><img src=".github/gifs/computer-cursor.gif" alt="The app's own cursor typing into a field and clicking a button in a test window, labelled Typing and Clicking" width="100%"></td>
-<td valign="top">
-
-**Its own cursor.** A second pointer shows where it is going and what it is doing. Your mouse stays yours.
-
-**You decide how much it may do.** Watch only, Ask every time, Ask before risky actions (the default), or Act without asking. It is off until you turn it on.
-
-**You can always stop it.** Esc, Stop, or moving the mouse into the top-left corner halts it at once. Pause, Take over and Continue hand control back and forth.
-
-</td>
-</tr>
-</table>
-
-- It never types into password fields, always asks before closing unsaved work, and never acts on a window you did not name.
-- Choose which screen it works on. Every action is recorded in an activity log.
-- It works with the sandbox: take something from the screen, process it in Python, put the result back.
-
-**Measured.** Tested with Qwen3.5-4B on Notepad and Calculator tasks: 4 of 4 passed. Reading a window takes 40-120 ms, and an action takes about half a second.
-
-<table>
-<tr>
-<td width="50%"><img src=".github/screens/settings-computer.png" alt="Settings, Computer use: allow computer use and the four permission levels"><br><sub><b>Permission</b>: four levels, one switch</sub></td>
-<td width="50%"><img src=".github/screens/settings-computer-screens.png" alt="Settings, Computer use: choosing the screen it works on, and working in the background"><br><sub><b>Screen</b>: which display it works on</sub></td>
-</tr>
-</table>
-
-Computer use is new and Windows only. Start with *Ask before risky actions*, and check what matters.
-
-<p align="right"><sub><a href="#top">Back to top</a></sub></p>
-
-## Look inside the model
-
-How the last answer was written, one token at a time: what the model chose, how sure it was, and what it nearly said. Then the model itself: every layer, read straight from its file.
-
-<p align="center"><img src=".github/gifs/lab-replay.gif" alt="An answer replayed token by token, with the five candidates at each step, the model's certainty, and the writing speed" width="100%"></p>
-
-<table>
-<tr>
-<td width="50%"><img src=".github/screens/lab-weights.png" alt="Weights view: every layer of the model as heatmaps of its query, key, value and feed-forward weights"><br><sub><b>Weights</b>: every layer, brighter where the weights are larger</sub></td>
-<td width="50%"><img src=".github/screens/lab-shape.png" alt="Shape view: layers, width, attention heads, vocabulary, trained context and the path from embeddings to output"><br><sub><b>Shape</b>: how the model is built, as its file describes it</sub></td>
-</tr>
-</table>
-
-<sub>The weight pictures above are drawn from sample data for this page; in the app they come from the model you have loaded.</sub>
-
-<p align="right"><sub><a href="#top">Back to top</a></sub></p>
-
-<a name="studio-plugins-and-apps"></a>
-## Studio, Plugins and Apps
-
-| | |
-|---|---|
-| **Studio** | Images and video from local diffusion models, speech in over a hundred Piper voices, all on this machine. |
-| **Models** | Search Hugging Face from the panel; each build is checked against your card *before* it downloads. |
-| **Plugins** | Any MCP server (a folder, GitHub, a database) with one-click presets. Enabled plugins offer their tools in Chat. |
-| **Apps** | One-click connection for opencode and Hermes Agent; one address for everything else. |
-| **Mesh** | Every machine in your home as one: a model too big for one card is split across them. |
-
-<table>
-<tr>
-<td width="50%"><img src=".github/screens/studio.png" alt="Studio: image mode with a prompt box, model choice, shape and quality controls"><br><sub><b>Studio</b>: pictures, video and speech</sub></td>
-<td width="50%"><img src=".github/screens/models.png" alt="Models: the models on this computer, each with whether it fits the graphics card"><br><sub><b>Models</b>: what fits your card, before it downloads</sub></td>
-</tr>
-<tr>
-<td width="50%"><img src=".github/screens/plugins.png" alt="Plugins: Filesystem and GitHub running, SQLite switched off, and one-click presets"><br><sub><b>Plugins</b>: MCP servers, started and monitored by Impulse</sub></td>
-<td width="50%"><img src=".github/screens/apps-p3.png" alt="Apps: opencode connected with memory per project, Hermes Agent ready to connect"><br><sub><b>Apps</b>: connect an agent in one click</sub></td>
-</tr>
-</table>
-
-<div align="center"><br><img src=".github/mesh.svg" alt="" width="100%"><br><br></div>
 
 <a name="use-it-from-the-agent-you-already-have"></a>
 ### Use it from the agent you already have
-
-<div align="center"><img src=".github/connect.svg" alt="" width="100%"></div>
-
-<br>
 
 Open **Apps** in the panel and press **Connect** beside the agent you use:
 
@@ -367,7 +496,7 @@ curl http://127.0.0.1:11500/v1/audio/transcriptions -F file=@hello.wav
 
 # images
 curl http://127.0.0.1:11500/v1/images/generations -H "content-type: application/json" \
-  -d '{"prompt":"a small orange cube with a face, pixel art","size":"512x512"}'
+  -d '{"prompt":"a watercolor lighthouse at dawn","size":"512x512"}'
 ```
 
 ```python
@@ -381,50 +510,11 @@ From another machine on your network, the same address works with the key from t
 
 <p align="right"><sub><a href="#top">Back to top</a></sub></p>
 
-## Make it yours
-
-**Home and the sidebar, arranged your way.** Drag widgets by their handles, resize them, add or remove what you do not use. The sidebar shows what you choose, in your order, under your headings.
-
-<table>
-<tr>
-<td width="50%"><img src=".github/screens/home-edit.png" alt="Home in edit mode: widgets with handles, Add widgets, Reset and Done"><br><sub><b>Arranging Home</b></sub></td>
-<td width="50%"><img src=".github/screens/settings-sidebar.png" alt="Settings, Sidebar: which pages the sidebar shows and in what order"><br><sub><b>Sidebar</b></sub></td>
-</tr>
-</table>
-
-**Themes.** Dark, Slate, Light and Cream, or follow the system, with nine accents.
-
-<table>
-<tr>
-<td width="50%"><img src=".github/screens/home-light.png" alt="Home in the Light theme"><br><sub><b>Light</b></sub></td>
-<td width="50%"><img src=".github/screens/settings-appearance.png" alt="Settings, Appearance: themes and accents"><br><sub><b>Appearance</b></sub></td>
-</tr>
-</table>
-
-**Your account.** A name for the greeting, and an optional password required before the panel opens. Apps keep working with the API key; the password only protects the panel.
-
-**Backups and restore.** Everything Impulse keeps (chats, preferences, service settings, contexts) in one file you can store anywhere, on a schedule if you like, and restore on a new machine.
-
-<table>
-<tr>
-<td width="50%"><img src=".github/screens/lock.png" alt="The lock screen asking for the password to open the app"><br><sub><b>Lock screen</b></sub></td>
-<td width="50%"><img src=".github/screens/settings-data.png" alt="Settings, Data: back up chats, preferences, service settings and contexts"><br><sub><b>Data</b>: back up and restore</sub></td>
-</tr>
-<tr>
-<td width="50%"><img src=".github/screens/settings-voice.png" alt="Settings, Voice and audio: microphone, input level, noise suppression and echo cancellation"><br><sub><b>Voice & audio</b>: microphone and speaker, tested in place</sub></td>
-<td width="50%"><img src=".github/screens/system.png" alt="System: the graphics card, memory and processor, live"><br><sub><b>System</b>: what the machine has and what is using it</sub></td>
-</tr>
-</table>
-
-**A window or a browser.** Impulse opens in its own window. The same panel works in any browser on this computer at `http://127.0.0.1:11500`.
-
-<p align="right"><sub><a href="#top">Back to top</a></sub></p>
-
 ## See it
 
 <a href="https://youtu.be/QZ6p2Il0MDs"><b>▶ Watch it in action</b></a> (YouTube), or take the short tour from **Settings › General › Guided tour** once it is installed.
 
-Every picture on this page is a capture of the real panel, filled with sample conversations, models and contexts.
+Every picture and GIF on this page is a recording of the real app with real model output; the contexts are public open-source code.
 
 <a name="built-on"></a>
 ## Built on
@@ -436,8 +526,6 @@ and **[faster-whisper](https://github.com/SYSTRAN/faster-whisper)** the voice. T
 
 <a name="faq"></a>
 ## FAQ
-
-**What happened to VLS?** It is now called Impulse. Velocity Context is now Momentum. Updating keeps all your data, the API address, the key and the `vls` command.
 
 **Does anything leave my machine?** No. The only outbound requests are the ones you ask for: searching
 Hugging Face, searching the web from Chat, downloading what you chose, and checking for a newer release. No telemetry, no account.
@@ -466,8 +554,6 @@ way to get it fixed.
 <br>
 
 <div align="center">
-
-<img src=".github/tofu.svg" alt="Tofu" width="100%">
 
 ### If Impulse is useful to you, a star helps others find it
 
